@@ -1,0 +1,21 @@
+{
+  "name": "yast-rest",
+  "version": "1.0.0",
+  "description": "Rest API for Yast.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jørgen Borgesen",
+  "license": "MIT",
+  "dependencies": {
+    "atob": "^1.1.2",
+    "body-parser": "^1.10.0",
+    "btoa": "^1.1.2",
+    "cors": "^2.5.2",
+    "express": "^4.10.6",
+    "js-yaml": "^3.2.3",
+    "swaggerize-express": "^3.0.1",
+    "yast-lib": "^1.0.0"
+  }
+}
