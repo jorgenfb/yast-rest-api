@@ -6,9 +6,7 @@ info:
   description: Connect your services with Yast.com
   version: "1.0.0"
 # the domain of the service
-host: localhost:5000
-# array of all schemes that your API supports
-basePath: /api
+host: yast-rest-api.herokuapp.com
 schemes:
   - http
 # will be prefixed to all paths
