@@ -5,8 +5,6 @@ function login(req, res, next){
 	var user = req.body.username;
 	var password = req.body.password;
 
-	console.log(user, password);
-
 	yast.auth.login(user, password).then(function(response){
 		var credentials = {
 			user: user,
