@@ -16,6 +16,6 @@
     "express": "^4.10.6",
     "js-yaml": "^3.2.3",
     "swaggerize-express": "^3.0.1",
-    "yast-lib": "^1.0.0"
+    "yast-lib": "^1.1.0"
   }
 }
