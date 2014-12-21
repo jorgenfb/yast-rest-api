@@ -2,15 +2,13 @@ var config = require('./config');
 var atob   = require('atob');
 
 function requireCredentials(req){
-	if (req.url.indexOf('api-docs') > 0){
-		return false;
-	}
-	if (req.url.indexOf('swagger-ui') > 0){
+	// No need for credentials for reading API documentation
+	if (req.url === '/api-docs' && req.method === 'GET'){
 		return false;
 	}
 
-	var authUrl = config.baseUrl + '/auth';
-	if (req.url === authUrl && req.method === 'POST') {
+	// Do not require credentials for the authorization request.
+	if (req.url === '/auth' && req.method === 'POST') {
 		return false;
 	}
 
